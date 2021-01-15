@@ -50,7 +50,7 @@
                     <navigationItem key="navigationItem" title="Birthdays" id="Jr8-iw-7Mg">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="KrI-aK-3VI">
                             <connections>
-                                <segue destination="FbS-cF-LKb" kind="presentation" id="PjD-4w-c70"/>
+                                <segue destination="BYZ-38-t0r" kind="show" id="lMc-b9-09u"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -64,11 +64,11 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="AddBirthdayViewController" customModule="BirthdayTracker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="IfV-lR-NFV" userLabel="Name Stack">
-                                <rect key="frame" x="20" y="91" width="374" height="160"/>
+                                <rect key="frame" x="20" y="123" width="374" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="First Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JoE-DZ-YLn">
                                         <rect key="frame" x="0.0" y="0.0" width="374" height="23.5"/>
@@ -99,7 +99,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="6dp-WD-6R0" userLabel="Birthdate Stack">
-                                <rect key="frame" x="20" y="281" width="374" height="237"/>
+                                <rect key="frame" x="20" y="313" width="374" height="237"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" Birthdate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1gf-nJ-T3b">
                                         <rect key="frame" x="149.5" y="0.0" width="75" height="21"/>
@@ -150,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1839.1304347826087" y="75.669642857142847"/>
+            <point key="canvasLocation" x="1078" y="76"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tuC-bT-M0D">
@@ -169,24 +169,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2og-Hx-JaI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-671.01449275362324" y="75.669642857142847"/>
-        </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="pG7-l1-xDF">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FbS-cF-LKb" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ML0-Fb-aIi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="TlC-c5-D85"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AkQ-9w-HDs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="928.98550724637687" y="75.669642857142847"/>
         </scene>
     </scenes>
     <resources>

@@ -10,6 +10,7 @@ import CoreData
 import UserNotifications
 
 class AddBirthdayViewController: UIViewController {
+    
     @IBOutlet var firstNameTextField: UITextField!
     @IBOutlet var lastNameTextField: UITextField!
     @IBOutlet var birthdatePicker: UIDatePicker!
@@ -20,6 +21,7 @@ class AddBirthdayViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         birthdatePicker.maximumDate = Date()
+        dismissKey() // регистрируем распознаватель жестов, чтобы клавиатура скрывалась
     }
 
     @IBAction func saveTapped( _ sender: UIBarButtonItem) {
@@ -66,4 +68,5 @@ class AddBirthdayViewController: UIViewController {
     @IBAction func cancelTapped(_ sender: UIBarButtonItem) {
         navigationController?.popViewController(animated: true)
     }
+
 }
